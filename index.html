@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國澤弘幸 - SEOライター</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8fbff;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4A90E2 0%, #5BA3F5 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            background: white;
+            margin: 40px 0;
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(74, 144, 226, 0.08);
+        }
+        
+        h2 {
+            color: #4A90E2;
+            font-size: 2em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #4A90E2;
+            font-weight: 600;
+        }
+        
+        h3 {
+            color: #2E5C8A;
+            font-size: 1.4em;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+        
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        
+        .strength-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .strength-card {
+            background: #f0f7ff;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #4A90E2;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .strength-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(74, 144, 226, 0.15);
+        }
+        
+        .strength-card h3 {
+            margin-top: 0;
+            color: #4A90E2;
+            font-size: 1.3em;
+        }
+        
+        .strength-card p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .service-item {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .service-item h4 {
+            color: #4A90E2;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .service-item p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .commitment-box {
+            background: linear-gradient(135deg, #4A90E2 0%, #5BA3F5 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .commitment-box h3 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        
+        .commitment-box p {
+            font-size: 1.1em;
+            line-height: 2;
+        }
+        
+        .contact-section {
+            text-align: center;
+        }
+        
+        .contact-info {
+            background: #f0f7ff;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        
+        .contact-info p {
+            font-size: 1.2em;
+            color: #4A90E2;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        
+        .email {
+            color: #2E5C8A;
+            font-size: 1.3em;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 15px 30px;
+            background: white;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        
+        .email:hover {
+            background: #4A90E2;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            section {
+                padding: 30px 20px;
+            }
+            
+            .strength-grid, .services-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>國澤 弘幸</h1>
+        <p>SEOライター</p>
+        <p class="subtitle">読まれるコンテンツで、あなたのビジネスを成長させます</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>ごあいさつ</h2>
+            <p class="intro-text">
+                はじめまして、SEOライターの國澤弘幸と申します。<br>
+                これまでIT業界での経験と、温泉旅館でのフロント・予約・総務業務を通じて培った「お客様の立場に立って考える力」を活かし、検索エンジンにも読者にも評価されるコンテンツ制作に取り組んでいます。
+            </p>
+            <p class="intro-text">
+                契約書作成などの法務関連業務にも携わってきた経験から、正確性と信頼性を重視した文章作成を得意としています。SEOライターとしては初心者ですが、これまでの多様な経験を武器に、お客様のビジネスに貢献できるコンテンツを全力でお届けいたします。
+            </p>
+        </section>
+        
+        <section>
+            <h2>私の強み</h2>
+            <div class="strength-grid">
+                <div class="strength-card">
+                    <h3>IT知識</h3>
+                    <p>現在IT業界で働いており、技術的な内容も正確に理解し、わかりやすく伝えることができます。テクノロジー関連の記事執筆に強みがあります。</p>
+                </div>
+                <div class="strength-card">
+                    <h3>ホスピタリティ精神</h3>
+                    <p>温泉旅館での長年の経験から、お客様のニーズを的確に捉える力を身につけました。読者が本当に求めている情報を提供します。</p>
+                </div>
+                <div class="strength-card">
+                    <h3>法務・総務スキル</h3>
+                    <p>契約書作成などの法務業務経験があり、正確性と論理性を重視した文章作成が可能です。コンプライアンスを意識した記事執筆も対応できます。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>提供サービス</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h4>SEO記事作成</h4>
+                    <p>検索上位を目指したキーワード最適化記事</p>
+                </div>
+                <div class="service-item">
+                    <h4>ブログ記事</h4>
+                    <p>読者に寄り添う価値ある情報提供</p>
+                </div>
+                <div class="service-item">
+                    <h4>Webコンテンツ</h4>
+                    <p>企業サイトやサービスページの文章作成</p>
+                </div>
+                <div class="service-item">
+                    <h4>リライト・編集</h4>
+                    <p>既存記事のSEO最適化と品質向上</p>
+                </div>
+            </div>
+            
+            <h3>特に得意な分野</h3>
+            <p class="intro-text">
+                ✓ IT・テクノロジー関連<br>
+                ✓ ビジネス・企業向けコンテンツ<br>
+                ✓ ホスピタリティ・観光業界<br>
+                ✓ 法務・コンプライアンス関連
+            </p>
+        </section>
+        
+        <section>
+            <h2>私の姿勢</h2>
+            <div class="commitment-box">
+                <h3>真摯に、丁寧に、誠実に</h3>
+                <p>
+                    SEOライターとしてはスタートラインに立ったばかりですが、だからこそ一つひとつの案件に全力で取り組みます。<br>
+                    お客様のビジネスゴールを理解し、期待を超える成果を出せるよう、日々学び続けています。<br><br>
+                    「初心者だからこそ持てる新鮮な視点」と「これまでの実務経験から得た信頼性」を武器に、<br>
+                    あなたのビジネスに貢献できるコンテンツをお届けします。
+                </p>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <h2>お問い合わせ</h2>
+            <div class="contact-info">
+                <p>記事作成のご依頼、ご相談はお気軽にどうぞ</p>
+                <a href="mailto:your.email@example.com" class="email">メールでお問い合わせ</a>
+                <p style="margin-top: 30px; font-size: 1em; color: #666;">
+                    ※メールアドレスは実際のアドレスに変更してください
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 國澤弘幸 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
